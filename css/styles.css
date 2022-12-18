@@ -6,6 +6,7 @@
   --hero-title-color: #ffffff;
   --btn-color: #4d5ae5;
   --btn-name-color: #ffffff;
+  --btn-active-color: #404bbf;
   --iris-color: #4d5ae5;
   --navy-blue-color: #2e2f42;
   --green-color: #31d0aa;
@@ -18,6 +19,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate-color);
+}
+
+.button {
+  cursor: pointer;
 }
 
 .list {
@@ -91,21 +96,21 @@ body {
 
 .hero-btn {
   background: var(--btn-color);
-  width: 170px;
-  height: 51px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
-}
-
-.hero-btn-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.04em;
   color: var(--btn-name-color);
+}
+
+.hero-btn:hover {
+  background: var(--btn-active-color);
+}
+
+.hero-btn:focus {
+  background: var(--btn-active-color);
 }
 
 /* --- section one --- */
@@ -177,4 +182,61 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cornflower-color);
+}
+
+/* --- PORTFOLIO --- */
+
+/* --- section one --- */
+
+.p-one-btn {
+  background: var(--cloud-color);
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--btn-color);
+}
+
+.p-one-btn:hover {
+  background: var(--btn-active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--btn-name-color);
+}
+
+.p-one-btn:focus {
+  background: var(--btn-active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  ont-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--btn-name-color);
+}
+
+/* all parameters section two three four */
+
+.p-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.p-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
 }
