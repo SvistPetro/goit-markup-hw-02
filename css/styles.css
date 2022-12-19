@@ -19,7 +19,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate-color);
-  background-color: #ffffff;
+  background-color: var(--hero-title-color);
 }
 
 .button {
@@ -41,7 +41,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
 }
 
 .header-logo-web {
@@ -71,16 +71,6 @@ body {
   color: var(--slate-color);
 }
 
-.header-list-item:hover,
-:focus {
-  color: var(--iris-color);
-}
-
-.header-contact-item:hover,
-:focus {
-  color: var(--iris-color);
-}
-
 /* --- STUDIO-MAIN --- */
 
 /* --- hero --- */
@@ -106,11 +96,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.04em;
   color: var(--btn-name-color);
-}
-
-.hero-btn:hover,
-:focus {
-  background: var(--btn-active-color);
 }
 
 /* --- section one --- */
@@ -199,19 +184,6 @@ body {
   color: var(--btn-color);
 }
 
-.p-btn:hover,
-:focus {
-  background: var(--btn-active-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--btn-name-color);
-}
-
 /* all parameters section two three four */
 
 .visually-hidden {
@@ -245,4 +217,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+}
+
+.header-list-item:hover,
+.header-list-item:focus,
+.header-contact-item:hover,
+.header-contact-item:focus {
+  color: var(--iris-color);
+}
+
+.p-btn:hover,
+.p-btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--btn-active-color);
+  color: var(--btn-name-color);
 }
