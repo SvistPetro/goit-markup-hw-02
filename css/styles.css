@@ -128,6 +128,14 @@ body {
 
 /* --- section three --- */
 
+.s-three {
+  background: var(--cloud-color);
+}
+
+.s-three-item {
+  background-color: var(--hero-title-color);
+}
+
 .s-three-title {
   font-weight: 600;
   font-size: 36px;
